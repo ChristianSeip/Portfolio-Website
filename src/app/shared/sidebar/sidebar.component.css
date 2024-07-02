@@ -1,0 +1,24 @@
+.sm-link-list {
+  list-style-type: none;
+  margin: 24px;
+  padding: 0;
+  li {
+    padding: 8px;
+  }
+  a {
+    color: var(--text-color);
+  }
+  svg {
+    width: 36px;
+    &:hover {
+      fill: var(--accent-color);
+      transition: fill 0.3s ease;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .sm-link-list {
+    display: none;
+  }
+}

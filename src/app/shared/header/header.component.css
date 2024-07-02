@@ -1,0 +1,36 @@
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  padding-left: var(--page-padding);
+  padding-right: var(--page-padding);
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: var(--primary-color);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.page-navigation {
+  a {
+    color: #fff;
+    text-decoration: none;
+    &:hover {
+      color: var(--accent-color);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .page-header {
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

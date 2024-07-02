@@ -1,0 +1,31 @@
+.page-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 128px;
+  padding-left: var(--page-padding);
+  padding-right: var(--page-padding);
+  a {
+    color: var(--text-color);
+    text-decoration: none;
+    &:hover {
+      color: var(--secondary-color);
+    }
+  }
+}
+
+.footer-links {
+  svg {
+    width: 30px;
+  }
+  svg:hover {
+    fill: var(--secondary-color);
+  }
+}
+
+@media (max-width: 768px) {
+  .page-footer {
+    flex-direction: column-reverse;
+  }
+}
